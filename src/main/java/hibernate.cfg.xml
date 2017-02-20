@@ -12,13 +12,13 @@
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
 
-      <mapping class="dao.BooksEntity"/>
-      <mapping class="dao.ContentOfOrderEntity"/>
-      <mapping class="dao.OrdersEntity"/>
-      <mapping class="dao.PublisherEntity"/>
-      <mapping class="dao.StatusOfOrderEntity"/>
-      <mapping class="dao.UsersEntity"/>
-      <mapping class="dao.UserStatusesEntity"/>
+      <mapping class="domain.BooksEntity"/>
+      <mapping class="domain.ContentOfOrderEntity"/>
+      <mapping class="domain.OrdersEntity"/>
+      <mapping class="domain.PublisherEntity"/>
+      <mapping class="domain.StatusOfOrderEntity"/>
+      <mapping class="domain.UsersEntity"/>
+      <mapping class="domain.UserStatusesEntity"/>
 
 
   </session-factory>

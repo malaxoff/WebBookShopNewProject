@@ -18,9 +18,6 @@
 
 
 
-
-
-
         <!-- ******** Spring ************** -->
     <dependency>
         <groupId>org.springframework</groupId>
@@ -133,9 +130,6 @@
         </dependency>
 
         <!--END Hibernate -->
-
-
-
 
 
 

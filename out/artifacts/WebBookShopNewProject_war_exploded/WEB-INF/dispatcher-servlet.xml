@@ -11,9 +11,10 @@
        <!-- Включаем аннотации -->
        <mvc:annotation-driven />
 
-
+       <!-- вся статика -->
        <mvc:resources mapping="/resources/**" location="/resources/" />
-       <!-- искать бины будем в mvc -->
+
+       <!--бины контроллеров -->
        <context:component-scan base-package="mvc" />
 
 
