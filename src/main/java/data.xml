@@ -30,13 +30,13 @@
 	<!-- Настройки бина dataSource будем хранить в отдельном файле -->
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
-		p:location="/WEB-INF/jdbc.properties" />
+		p:location="jdbc.properties" />
 
 	<!-- Непосредственно бин dataSource -->
 	<bean id="dataSource"
-		class="oracle.jdbc.driver.OracleDriver"
-		p:driverClassName="oracle.jdbc.driver.OracleDriver"
-		p:url="jdbc:oracle:thin:@localhost:1521:XE"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		p:driverClassName="${jdbc.driverClassName}" 
+		p:url="${jdbc.databaseurl}"
 		p:username="${jdbc.username}" 
 		p:password="${jdbc.password}" />
 
