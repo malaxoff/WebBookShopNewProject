@@ -1,11 +1,22 @@
 package dao;
 
-/**
- * Created with IntelliJ IDEA.
- * User: user
- * Date: 18.02.17
- * Time: 23:28
- * To change this template use File | Settings | File Templates.
- */
-public class UsersDAOImpl {
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+//     Реализация интерфейса доступа к данным таблицы "Пользователи"
+
+@Repository
+public class UsersDAOImpl implements UsersDAO {
+
+    @Autowired
+    private SessionFactory sessionFactory;
+
+
+    public boolean isUserByLoginPassword(String login, String password){
+
+              return  false;
+
+
+    }
 }
